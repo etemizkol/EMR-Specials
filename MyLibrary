@@ -1,0 +1,3 @@
+# Eksik gözlemlerin görselleştirilmesi için missingno kütüphanesi kullanılarak eksik gözlemler görselleştirilmiştir.
+import missingno as msno
+msno.bar(df);
