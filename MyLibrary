@@ -12,3 +12,10 @@ def split_train_test(data, test_ratio):
     test_indices = shuffled_indices[:test_set_size]
     train_indices = shuffled_indices[test_set_size:]
     return data.iloc[train_indices], data.iloc[test_indices]
+
+
+# Oluşturulan bir for döngüsü için görsel olarak ilerlemeyi gösteren kütüphane
+from tqdm import tqdm
+for i in tqdm(range(10000)):
+# ek bilgi için:
+# https://pypi.org/project/tqdm/
