@@ -19,3 +19,18 @@ from tqdm import tqdm
 for i in tqdm(range(10000)):
 # ek bilgi için:
 # https://pypi.org/project/tqdm/
+
+
+# Levene Testi
+from scipy import stats
+stats.levene(group_a,group_b)
+
+# Bağımsız iki örneklem t testi
+test_statistic, pvalue = stats.ttest_ind(group_a, group_b, equal_var= True or False )
+
+# Man Whitney U Testi
+stats.mannwhitneyu(group_a, group_b)
+
+# Güven Aralığı
+import statsmodels.stats.api as sms
+sms.DescrStatsW(sample).tconfint_mean()
